@@ -114,7 +114,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:tuna200538@gmail.com
     - label: "Website"
-      icon: "https://atcoder.junah.dev/v1/generate_badge?name=codingtuna"
+      icon: "fas fa-fw fa-link"
       url: "https://atcoder.junah.dev/v1/generate_badge?name=codingtuna"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
