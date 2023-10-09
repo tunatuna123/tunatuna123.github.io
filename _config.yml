@@ -101,28 +101,19 @@ author:
   name: "이현준(Lee HyunJun)" # 블로그 닉네임
   avatar: "/assets/images/meee.png" # 블로그 프로필 사진
   # bio              : "이현준(Lee HyunJun)"
-  location         : "Republic of Korea"
+  # location         : "Republic of Korea, Ulsan  "
   # email            : "youremailhere@xxxxxx.com"
 
   links: # 사이트 링크
-#     - label: "Email"
-#       icon: "fas fa-fw fa-envelope-square"
-#       # url: "mailto:your.name@email.com"
-#     - label: "Website"
-#       icon: "fas fa-fw fa-link"
-#       # url: "https://your-website.com"
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-twitter-square"
-#       # url: "https://twitter.com/"
-#     - label: "Facebook"
-#       icon: "fab fa-fw fa-facebook-square"
-#       # url: "https://facebook.com/"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://www.instagram.com/"
+    - label: "Solved.AC"
+      icon: "fas fa-light fa-code"
+      url: "https://solved.ac/profile/tuna200538"
+    - label: "Atcoder"
+      icon: "fas fa-light fa-code"
+      url: "https://atcoder.jp/users/codingtuna"
+    - label: "Codeforce"
+      icon: "fas fa-light fa-code"
+      url: "https://codeforces.com/profile/TUN4TUNA"
 
 # Site Footer
 footer:
@@ -145,15 +136,6 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-    - label: "Solved.AC"
-      icon: "fas fa-light fa-code"
-      url: "https://solved.ac/profile/tuna200538"
-    - label: "Atcoder"
-      icon: "fas fa-light fa-code"
-      url: "https://atcoder.jp/users/codingtuna"
-    - label: "Codeforce"
-      icon: "fas fa-light fa-code"
-      url: "https://codeforces.com/profile/TUN4TUNA"
 
 # Reading Files
 include:
