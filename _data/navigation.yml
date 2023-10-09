@@ -1,20 +1,30 @@
 # main links
 main:
-  #- title: "Home"
-  #  url: "/"
   - title: "Home"
     url: /
-  - title: "Introduce"
-    url: /about/
-  - title: "Category"
-    url: "/categories/"
-  - title: "Tags"
-    url: /tags/
 
-docs:
-  - title: Algorithm
-    children:
-      - title: "Atcoder"
-        url: /sidebar/Atcoder
-      - title: "CodeForces"
-        url: /sidebar/CodeForces
+  - title: "About"
+    url: /about/
+
+  - title: "GitHub"
+    url: https://github.com/tunatuna123
+  # - title: "Projects"
+  #   url: /projects/
+
+  # - title: "Categories"
+  #   url: /categories/
+
+# sidebar navigation (categories)
+# 2022.02.15 sidebar update : simple ver.
+categories:
+  - title: "Dev things"
+    url: /categories/Dev/
+
+  - title: "Algorithm"
+    url: /categories/Algorithm/
+
+  - title: "잡소리"
+    url: /categories/Talk/
+
+  - title: "PS"
+    url: /categories/PS/

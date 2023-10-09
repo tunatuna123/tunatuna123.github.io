@@ -1,34 +1,73 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="ko" class="no-js">
   <head>
-    <!-- ADD favicon-->
-<link rel="icon" type="image/png" href="/assets/favicon.ico">
+    <style> 
+      ::-webkit-scrollbar{ 
+        width: 10px;
+        height: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        width: 0px;
+        background-color: rgba(224, 224, 224, 0.2);
+        /* border-radius: 5px; */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        width: 0px;
+        background-color: rgba(220, 219, 218, 0.6);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        width: 10px;
+        height: 20px;
+        /* background-color: rgba(190, 190, 190, 0.2); */
+        background-color: rgba(193, 192, 191, 0.7);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-track:hover {
+        width: 10px;
+        /* background-color: rgba(150, 150, 150, 0.1); */
+        background-color: rgba(224, 224, 224, 0.5);
+        border-radius: 5px;
+        /* background: transparent; */
+        /* border-radius: 10px; */
+      }
+
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+          width:0px;
+          height: 0px;
+          /* background-color: rgb(14, 221, 24); */
+          /* border-radius: 50%; */
+      }
+    </style>
+    
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Posts by Category | 이현준(Lee HyunJun)</title>
+<meta name="description" content="05년생이상한거 개발하고 PS를 즐깁니다.PS 대회 업솔빙 및 기록용 블로그">
 
 
-<meta charset="utf-8">
-
-<!-- begin _includes/seo.html --><title>Posts by Category - Tuna’s DevBlog</title>
-<meta name="description" content="개발일지, PS 알고리즘 정리, 대회 후기와 업솔빙 및 잡설용 블로그">
-
-
-  <meta name="author" content="이현준(Tuna Lee)">
+  <meta name="author" content="이현준(Lee HyunJun)">
   
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:site_name" content="Tuna's DevBlog">
+<meta property="og:site_name" content="Tuna's 개발새발 개발일지">
 <meta property="og:title" content="Posts by Category">
 <meta property="og:url" content="http://localhost:4000/categories/">
 
 
-  <meta property="og:description" content="개발일지, PS 알고리즘 정리, 대회 후기와 업솔빙 및 잡설용 블로그">
+  <meta property="og:description" content="05년생이상한거 개발하고 PS를 즐깁니다.PS 대회 업솔빙 및 기록용 블로그">
 
 
 
@@ -55,7 +94,7 @@
     "@context": "https://schema.org",
     
       "@type": "Person",
-      "name": "이현준(Lee HyunJun)",
+      "name": "Tuna's Blog",
       "url": "http://localhost:4000/"
     
   }
@@ -66,12 +105,11 @@
 
 
 
-
 <!-- end _includes/seo.html -->
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Tuna's DevBlog Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Tuna's 개발새발 개발일지 Feed">
 
 
 <!-- https://t.co/dKP3o1e -->
@@ -83,8 +121,22 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
 
 
     <!-- start custom head snippets -->
@@ -93,16 +145,29 @@
 
 <!-- end custom head snippets -->
 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tunatuna123.github.io/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tunatuna123.github.io/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tunatuna123.github.io/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://tunatuna123.github.io/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://tunatuna123.github.io/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
   </head>
 
   <body class="layout--categories">
     <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
     <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
   </ul>
 </nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
 
     
 
@@ -112,21 +177,19 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          개발새발 개발 및 PS 기록지
-          <span class="site-subtitle">블로그 공사중 / 개발일지, PS 알고리즘 정리, 대회 후기와 업솔빙 및 잡설용 블로그</span>
+          Tuna's 개발새발 개발일지
+          
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/">Home</a>
             </li><li class="masthead__menu-item">
-              <a href="/about/">Introduce</a>
+              <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/categories/">Category</a>
-            </li><li class="masthead__menu-item">
-              <a href="/tags/">Tags</a>
+              <a href="https://github.com/tunatuna123">GitHub</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">토글 메뉴</span>
+          <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
@@ -147,67 +210,33 @@
   
 
 
-<div itemscope itemtype="https://schema.org/Person" class="h-card">
+<div itemscope itemtype="https://schema.org/Person">
 
   
     <div class="author__avatar">
-      <a href="http://localhost:4000/">
-        <img src="/assets/image/bio-photo.jpg" alt="이현준(Tuna Lee)" itemprop="image" class="u-photo">
-      </a>
+      
+        <img src="/assets/images/meee.png" alt="이현준(Lee HyunJun)" itemprop="image">
+      
     </div>
   
 
-  <div class="author__content">
-    <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">이현준(Tuna Lee)</a>
-    </h3>
+  <!-- 2022.02.17 author content hidden -->
+  <!-- <div class="author__content">
     
-      <div class="author__bio p-note" itemprop="description">
-        <p>05년생<br />이상한거 개발하고 PS를 즐깁니다.<br />PS 대회 업솔빙 및 기록용 블로그</p>
-
-      </div>
+      <h3 class="author__name" itemprop="name">이현준(Lee HyunJun)</h3>
     
-  </div>
+    
+  </div> -->
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">팔로우</button>
+    <!-- <button class="btn btn--inverse">Follow</button> -->
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea, Ulsan</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
         </li>
       
 
-      
-        
-          
-            <li><a href="mailto:tuna200538@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            <li><a href="https://github.com/tunatuna123" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-          
-        
-          
-        
-          
-            <li><a href="https://solved.ac/profile/tuna200538" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-light fa-code" aria-hidden="true"></i><span class="label">Solved.AC</span></a></li>
-          
-        
-          
-            <li><a href="https://atcoder.jp/users/codingtuna" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-light fa-code" aria-hidden="true"></i><span class="label">Atcoder</span></a></li>
-          
-        
-          
-            <li><a href="https://codeforces.com/profile/TUN4TUNA" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-light fa-code" aria-hidden="true"></i><span class="label">Codeforce</span></a></li>
-          
-        
       
 
       
@@ -260,7 +289,7 @@
 
       <!--
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
       <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
@@ -288,33 +317,9 @@
   
     
       
-    
-      
         <li>
-          <a href="#algorithm">
-            <strong>Algorithm</strong> <span class="taxonomy__count">2</span>
-          </a>
-        </li>
-      
-    
-      
-    
-  
-    
-      
-        <li>
-          <a href="#atcoder">
-            <strong>Atcoder</strong> <span class="taxonomy__count">1</span>
-          </a>
-        </li>
-      
-    
-      
-    
-      
-        <li>
-          <a href="#codeforces">
-            <strong>CodeForces</strong> <span class="taxonomy__count">1</span>
+          <a href="#ps">
+            <strong>PS</strong> <span class="taxonomy__count">1</span>
           </a>
         </li>
       
@@ -326,10 +331,8 @@
 
   
     
-  
-    
-      <section id="algorithm" class="taxonomy__section">
-        <h2 class="archive__subtitle">Algorithm</h2>
+      <section id="ps" class="taxonomy__section">
+        <h2 class="archive__subtitle">PS</h2>
         <div class="entries-list">
           
             
@@ -341,7 +344,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/codeforces/algorithm/CF-div2-%ED%9B%84%EA%B8%B0/" rel="permalink">CodeForces Div2
+        <a href="/PS/ABC323/" rel="permalink">ABC323 풀이 및 후기
 </a>
       
     </h2>
@@ -349,181 +352,27 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-10-08T00:00:00+09:00">October 8, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">곧 업로드 예정
-</p>
-  </article>
-</div>
-
-          
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/atcoder/algorithm/ABC323-%ED%9B%84%EA%B8%B0/" rel="permalink">ABC323 풀이 및 후기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-  ABC323
-
+    <p class="archive__item-excerpt" itemprop="description">A,B,C 3솔 / D 업솔빙
 </p>
   </article>
 </div>
 
           
         </div>
-        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
-      </section>
-    
-  
-    
-  
-
-  
-    
-      <section id="atcoder" class="taxonomy__section">
-        <h2 class="archive__subtitle">Atcoder</h2>
-        <div class="entries-list">
-          
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/atcoder/algorithm/ABC323-%ED%9B%84%EA%B8%B0/" rel="permalink">ABC323 풀이 및 후기
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-  ABC323
-
-</p>
-  </article>
-</div>
-
-          
-        </div>
-        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
-      </section>
-    
-  
-    
-  
-    
-      <section id="codeforces" class="taxonomy__section">
-        <h2 class="archive__subtitle">CodeForces</h2>
-        <div class="entries-list">
-          
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/codeforces/algorithm/CF-div2-%ED%9B%84%EA%B8%B0/" rel="permalink">CodeForces Div2
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">곧 업로드 예정
-</p>
-  </article>
-</div>
-
-          
-        </div>
-        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
+        <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
       </section>
     
   
@@ -543,7 +392,7 @@
         <div class="page__footer-follow">
   <ul class="social-icons">
     
-      <li><strong>팔로우:</strong></li>
+      <li><strong>Follow:</strong></li>
     
 
     
@@ -562,15 +411,24 @@
       
         
       
+        
+          <li><a href="https://solved.ac/profile/tuna200538" rel="nofollow noopener noreferrer"><i class="fas fa-light fa-code" aria-hidden="true"></i> Solved.AC</a></li>
+        
+      
+        
+          <li><a href="https://atcoder.jp/users/codingtuna" rel="nofollow noopener noreferrer"><i class="fas fa-light fa-code" aria-hidden="true"></i> Atcoder</a></li>
+        
+      
+        
+          <li><a href="https://codeforces.com/profile/TUN4TUNA" rel="nofollow noopener noreferrer"><i class="fas fa-light fa-code" aria-hidden="true"></i> Codeforce</a></li>
+        
+      
     
 
-    
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
     
   </ul>
 </div>
-
-<div class="page__footer-copyright">&copy; 2023 이현준(Lee HyunJun). Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2023 Tuna's Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

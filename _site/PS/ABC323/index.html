@@ -1,0 +1,738 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <style> 
+      ::-webkit-scrollbar{ 
+        width: 10px;
+        height: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        width: 0px;
+        background-color: rgba(224, 224, 224, 0.2);
+        /* border-radius: 5px; */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        width: 0px;
+        background-color: rgba(220, 219, 218, 0.6);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        width: 10px;
+        height: 20px;
+        /* background-color: rgba(190, 190, 190, 0.2); */
+        background-color: rgba(193, 192, 191, 0.7);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-track:hover {
+        width: 10px;
+        /* background-color: rgba(150, 150, 150, 0.1); */
+        background-color: rgba(224, 224, 224, 0.5);
+        border-radius: 5px;
+        /* background: transparent; */
+        /* border-radius: 10px; */
+      }
+
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+          width:0px;
+          height: 0px;
+          /* background-color: rgb(14, 221, 24); */
+          /* border-radius: 50%; */
+      }
+    </style>
+    
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>ABC323 풀이 및 후기 | 이현준(Lee HyunJun)</title>
+<meta name="description" content="A,B,C 3솔 / D 업솔빙">
+
+
+  <meta name="author" content="이현준(Lee HyunJun)">
+  
+  <meta property="article:author" content="이현준(Lee HyunJun)">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Tuna's 개발새발 개발일지">
+<meta property="og:title" content="ABC323 풀이 및 후기">
+<meta property="og:url" content="http://localhost:4000/PS/ABC323/">
+
+
+  <meta property="og:description" content="A,B,C 3솔 / D 업솔빙">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-10-08T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2023-10-08T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/PS/ABC323/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Tuna's Blog",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Tuna's 개발새발 개발일지 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tunatuna123.github.io/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tunatuna123.github.io/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tunatuna123.github.io/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://tunatuna123.github.io/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://tunatuna123.github.io/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Tuna's 개발새발 개발일지
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/tunatuna123">GitHub</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/meee.png" alt="이현준(Lee HyunJun)" itemprop="image">
+      
+    </div>
+  
+
+  <!-- 2022.02.17 author content hidden -->
+  <!-- <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">이현준(Lee HyunJun)</h3>
+    
+    
+  </div> -->
+
+  <div class="author__urls-wrapper">
+    <!-- <button class="btn btn--inverse">Follow</button> -->
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    <!-- <li>
+      <span class="nav__total">🌴 Total Posts: 1</span>
+    </li> -->
+    
+    
+      <li>
+        
+              <a href="/categories/Dev/"><span class="nav__sub-title">Dev things</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+              <a href="/categories/Algorithm/"><span class="nav__sub-title">Algorithm</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+              <a href="/categories/Talk/"><span class="nav__sub-title">잡소리</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+              <a href="/categories/PS/"><span class="nav__sub-title">PS</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="ABC323 풀이 및 후기">
+    <meta itemprop="description" content="A,B,C 3솔 / D 업솔빙">
+    <meta itemprop="datePublished" content="2023-10-08T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-10-08T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">ABC323 풀이 및 후기
+</h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-10-08T00:00:00+09:00">October 8, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#후기">[후기]</a></li><li><a href="#풀이">[풀이]</a><ul><li><a href="#a---weak-beats-214">A - Weak Beats (2:14)</a></li><li><a href="#b---round-robin-tournament-654">B - Round-Robin Tournament (6:54)</a></li><li><a href="#c---world-tour-finals-4131">C - World Tour Finals (41:31)</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p><a href="https://atcoder.jp/contests/abc323"><strong>ABC323</strong></a></p>
+</blockquote>
+
+<h2 id="후기">[후기]</h2>
+<p><br />
+ 영광스러운 블로그의 첫 개시물이다. 고3이 수능이 40일도 남지 않은 시점에서 블로그를 만들고 Atcoder에 참가하고 후기까지 쓰고 있다. 최대한 자제하고는 싶었지만 오늘 친 실모가 점수가 잘 떴다는 변명 하나로 합리화하면서 좀 놀았다.</p>
+
+<p>Atcoder에 참가한 경험이 많지는 않지만, <a href="https://kenkoooo.com/atcoder#/table/">Atcoder problems</a>를 심심할 때마다 풀어본 경험으로 미루어 보았을 때, 전체적으로 쉬웠던 편이라고 느꼈다.</p>
+
+<p>사실, 다른 문제들에 비해 쉽다고 느꼈을 뿐이지 그렇다고 해서 드라마틱하게 많이 풀거나 그러진 못했다.</p>
+
+<p><img src="/assets/images/posts_img/2023-10-8-CF div2 후기/ABC323.png" alt="image" /></p>
+
+<p>A, B를 10분 안에 풀어서 이때까지만 해도 느낌이 좋았지만, C에서 wrong이 떠서 30분 넘게 시간을 허비하면서 D는 볼 힘도 남아있지 않았었다.</p>
+
+<p><img src="/assets/images/posts_img/2023-10-8-CF div2 후기/standing.png" alt="image" />
+D는 대회 이후 업솔빙 했다.</p>
+
+<h2 id="풀이">[풀이]</h2>
+
+<h3 id="a---weak-beats-214">A - Weak Beats (2:14)</h3>
+
+<blockquote>
+  <p>Time Limit: 2 sec / Memory Limit: 1024 MB
+Score : 100 points</p>
+
+  <p><strong>Problem</strong><br />
+You are given a string S of length 16 consisting of 0 and 1.
+If the i-th character of S is 0 for every even number i from 2 through
+16, print Yes; otherwise, print No.</p>
+
+  <p><strong>Constraints</strong><br />
+(S is a string of length 16 consisting of 0 and 1.)</p>
+</blockquote>
+
+<p>0과 1로 이루어진 16자리의 문자열이 주어진다. 이때, 짝수 번째에 위치한 숫자가 모두 0이면 Yes을 출력, 아니면 No을 출력하는 문제다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">sys</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">17</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sh">'</span><span class="s">1</span><span class="sh">'</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">No</span><span class="sh">'</span><span class="p">)</span>
+            <span class="n">sys</span><span class="p">.</span><span class="nf">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Yes</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+<p><a href="https://atcoder.jp/contests/abc323/submissions/46281745"><strong><em>풀이 코드</em></strong></a><br />
+사실 엄청 쉬운 문제인데 영어라서 시간이 걸렸다. 영어 속독 연습해야할 듯…</p>
+
+<h3 id="b---round-robin-tournament-654">B - Round-Robin Tournament (6:54)</h3>
+
+<blockquote>
+  <p>Time Limit: 2 sec / Memory Limit: 1024 MB
+Score : 200 points</p>
+
+  <p><strong>Problem</strong><br />
+There are N players numbered 1 to N, who have played a round-robin tournament. For every match in this tournament, one player won and the other lost. The results of the matches are given as N strings $S_{1}​,S_{2}​,…,S_{N}​$ of length N each, in the following format:</p>
+
+  <ul>
+    <li>
+      <p>If i != j, the j-th character of $S_{i}$ is <code class="language-plaintext highlighter-rouge">o</code> or <code class="language-plaintext highlighter-rouge">x</code>. <code class="language-plaintext highlighter-rouge">o</code> means that player i won against player j, and <code class="language-plaintext highlighter-rouge">x</code> means that player i lost to player j.</p>
+    </li>
+    <li>
+      <p>If i=j, the j-th character of $S_{i}$​ is <code class="language-plaintext highlighter-rouge">-</code>.</p>
+    </li>
+  </ul>
+
+  <p>The player with more wins ranks higher. If two players have the same number of wins, the player with the smaller player number ranks higher. Report the player numbers of theN players in descending order of rank.</p>
+
+  <p><strong>Constraints</strong><br />
+2≤N≤100<br />
+N is an integer.<br />
+Si​ is a string of length<br />
+N consisting of <code class="language-plaintext highlighter-rouge">o</code>, <code class="language-plaintext highlighter-rouge">x</code>, and <code class="language-plaintext highlighter-rouge">-</code>.<br />
+$S_{1}​,…,S_{N}$​ conform to the format described in the problem statement.</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">o</code> 의 개수를 점수로 생각하고, 점수와 동시에 N을 저장한다. 이후, N에 대해서 오름차순으로 정리하고, 점수에 대해 내림차순으로 정렬한다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">sys</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">lst</span><span class="p">.</span><span class="nf">append</span><span class="p">((</span><span class="nf">input</span><span class="p">().</span><span class="nf">count</span><span class="p">(</span><span class="sh">'</span><span class="s">o</span><span class="sh">'</span><span class="p">),</span> <span class="n">_</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="n">lst</span><span class="p">.</span><span class="nf">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">lst</span><span class="p">.</span><span class="nf">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+<p><a href="https://atcoder.jp/contests/abc323/submissions/46288496"><strong><em>풀이 코드</em></strong></a><br />
+sort를 어떻게 해야할지 까먹었었다. <code class="language-plaintext highlighter-rouge">sort()</code>의 <code class="language-plaintext highlighter-rouge">key</code>를 사용해서 특정 부분에 따라 정렬할 수 있다.</p>
+
+<h3 id="c---world-tour-finals-4131">C - World Tour Finals (41:31)</h3>
+<blockquote>
+  <p>Time Limit: 2 sec / Memory Limit: 1024 MB
+Score : 250 points</p>
+
+  <p><strong>Problem Statement</strong><br />
+The programming contest World Tour Finals is underway, where
+N players are participating, and half of the competition time has passed. There are M problems in this contest, and the score $A_{i}$​ of problem i is a multiple of 100 between 500 and 2500, inclusive.</p>
+
+  <p>For each i=1,…,N, you are given a string Si​ that indicates which problems player i has already solved. $S_{i}$​ is a string of length M consisting of <code class="language-plaintext highlighter-rouge">o</code> and <code class="language-plaintext highlighter-rouge">x</code>, where the j-th character of Si​ is <code class="language-plaintext highlighter-rouge">o</code> if player i has already solved problem j, and <code class="language-plaintext highlighter-rouge">x</code> if they have not yet solved it. Here, none of the players have solved all the problems yet.</p>
+
+  <p>The total score of player i is calculated as the sum of the scores of the problems they have solved, plus a <strong>bonus score</strong> of i points.</p>
+
+  <p>For each i=1,…,N, answer the following question.</p>
+
+  <ul>
+    <li>At least how many of the problems that player i has not yet solved must player i solve to exceed all other players’ current total scores?</li>
+  </ul>
+
+  <p>Note that under the conditions in this statement and the constraints, it can be proved that player i can exceed all other players’ current total scores by solving all the problems, so the answer is always defined.</p>
+
+  <p><strong>Constraints</strong><br />
+2≤N≤100<br />
+1≤M≤100<br />
+500≤$A_{i}$​≤2500<br />
+$A_{i}$​ is a multiple of 100.<br />
+$S_{i}$​ is a string of length<br />
+M consisting of <code class="language-plaintext highlighter-rouge">o</code> and <code class="language-plaintext highlighter-rouge">x</code>.<br />
+$S_{i}$​ contains at least one <code class="language-plaintext highlighter-rouge">x</code>.<br />
+All numeric values in the input are integers.</p>
+</blockquote>
+
+<p>문제 한번 더럽게 길다. 솔직히 30분 중에 이해하는데 10분 넘게 쓴거 같다. 게다가 처음 넣은 답은 접근 자체는 맞았지만 ‘이미 푼 문제’를 고려하지 않아서 틀려버렸다. 이거 생각해내는데 꽤나 걸렸었다. 이후 ‘풀지 않은 문제들(풀 수 있는 문제들)’을 <code class="language-plaintext highlighter-rouge">none_solve</code> 리스트에 저장해서 해결했다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">sys</span>
+<span class="kn">from</span> <span class="n">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+
+<span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="o">=</span> <span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nf">input</span><span class="p">().</span><span class="nf">split</span><span class="p">())</span>
+<span class="n">score</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nf">input</span><span class="p">().</span><span class="nf">split</span><span class="p">()))</span>
+<span class="n">current</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">part_score</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">none_solve</span> <span class="o">=</span> <span class="nf">list</span><span class="p">([]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">current</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="nf">input</span><span class="p">().</span><span class="nf">strip</span><span class="p">()))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">current</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="sh">'</span><span class="s">o</span><span class="sh">'</span><span class="p">:</span>
+            <span class="n">a</span> <span class="o">+=</span> <span class="n">score</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">none_solve</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="nf">append</span><span class="p">(</span><span class="n">score</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+    <span class="n">part_score</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">part_score</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="nf">max</span><span class="p">(</span><span class="n">part_score</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">+=</span> <span class="nf">sorted</span><span class="p">(</span><span class="n">none_solve</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)[</span><span class="n">ans</span><span class="p">]</span>
+        <span class="n">ans</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
+</code></pre></div></div>
+<p><a href="https://atcoder.jp/contests/abc323/submissions/46323961"><strong><em>풀이 코드</em></strong></a><br />
+<a href="https://atcoder.jp/contests/abc323/submissions/46310060">제출한 오답</a><br />
+고작 이 정도 구현으로 힘들어 하다니 백준 실랜디 좀 열심히 해야 할 것 같다.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#ps" class="page__taxonomy-item" rel="tag">PS</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-10-08">October 8, 2023</time></p>
+
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+            
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/tunatuna123" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://solved.ac/profile/tuna200538" rel="nofollow noopener noreferrer"><i class="fas fa-light fa-code" aria-hidden="true"></i> Solved.AC</a></li>
+        
+      
+        
+          <li><a href="https://atcoder.jp/users/codingtuna" rel="nofollow noopener noreferrer"><i class="fas fa-light fa-code" aria-hidden="true"></i> Atcoder</a></li>
+        
+      
+        
+          <li><a href="https://codeforces.com/profile/TUN4TUNA" rel="nofollow noopener noreferrer"><i class="fas fa-light fa-code" aria-hidden="true"></i> Codeforce</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+<div class="page__footer-copyright">&copy; 2023 Tuna's Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+<script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', 'github-account/repo-name');
+    script.setAttribute('issue-term', 'pathname');
+    script.setAttribute('theme', 'github-light');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+
+  
+
+
+
+
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+extensions: ["tex2jax.js"],
+jax: ["input/TeX", "output/HTML-CSS"],
+tex2jax: {
+inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+processEscapes: true
+},
+"HTML-CSS": { availableFonts: ["TeX"] }
+});
+</script>
+
+  </body>
+</html>
