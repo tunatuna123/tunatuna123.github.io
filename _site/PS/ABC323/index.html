@@ -401,7 +401,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#후기">[후기]</a></li><li><a href="#풀이">[풀이]</a><ul><li><a href="#a---weak-beats-214">A - Weak Beats (2:14)</a></li><li><a href="#b---round-robin-tournament-654">B - Round-Robin Tournament (6:54)</a></li><li><a href="#c---world-tour-finals-4131">C - World Tour Finals (41:31)</a></li></ul></li><li><a href="#업솔빙">[업솔빙]</a></li></ul>
+              <ul class="toc__menu"><li><a href="#후기">[후기]</a></li><li><a href="#풀이">[풀이]</a><ul><li><a href="#a---weak-beats-214">A - Weak Beats (2:14)</a></li><li><a href="#b---round-robin-tournament-654">B - Round-Robin Tournament (6:54)</a></li><li><a href="#c---world-tour-finals-4131">C - World Tour Finals (41:31)</a></li></ul></li><li><a href="#업솔빙">[업솔빙]</a><ul><li><a href="#d---merge-slimes">D - Merge Slimes</a></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -430,10 +430,10 @@ D는 대회 이후 업솔빙 했다.</p>
 <h3 id="a---weak-beats-214">A - Weak Beats (2:14)</h3>
 
 <blockquote>
-  <p>Time Limit: 2 sec / Memory Limit: 1024 MB
+  <p>Time Limit: 2 sec / Memory Limit: 1024 MB<br />
 Score : 100 points</p>
 
-  <p><strong>Problem</strong><br />
+  <p><strong>Problem Statement</strong><br />
 You are given a string S of length 16 consisting of 0 and 1.
 If the i-th character of S is 0 for every even number i from 2 through
 16, print Yes; otherwise, print No.</p>
@@ -463,10 +463,10 @@ If the i-th character of S is 0 for every even number i from 2 through
 <h3 id="b---round-robin-tournament-654">B - Round-Robin Tournament (6:54)</h3>
 
 <blockquote>
-  <p>Time Limit: 2 sec / Memory Limit: 1024 MB
+  <p>Time Limit: 2 sec / Memory Limit: 1024 MB<br />
 Score : 200 points</p>
 
-  <p><strong>Problem</strong><br />
+  <p><strong>Problem Statement</strong><br />
 There are N players numbered 1 to N, who have played a round-robin tournament. For every match in this tournament, one player won and the other lost. The results of the matches are given as N strings $S_{1}​,S_{2}​,…,S_{N}​$ of length N each, in the following format:</p>
 
   <ul>
@@ -511,7 +511,7 @@ sort를 어떻게 해야할지 까먹었었다. <code class="language-plaintext 
 
 <h3 id="c---world-tour-finals-4131">C - World Tour Finals (41:31)</h3>
 <blockquote>
-  <p>Time Limit: 2 sec / Memory Limit: 1024 MB
+  <p>Time Limit: 2 sec / Memory Limit: 1024 MB<br />
 Score : 250 points</p>
 
   <p><strong>Problem Statement</strong><br />
@@ -580,6 +580,61 @@ All numeric values in the input are integers.</p>
 
 <h2 id="업솔빙">[업솔빙]</h2>
 
+<h3 id="d---merge-slimes">D - Merge Slimes</h3>
+
+<blockquote>
+  <p>Time Limit: 3 sec / Memory Limit: 1024 MB<br />
+Score :425 points</p>
+
+  <p><strong>Problem Statement</strong><br />
+Initially, there are N sizes of slimes. Specifically, for each 1≤i≤N, there are $C_{i}$​ slimes of size $S_{i}$​.</p>
+
+  <p>Takahashi can repeat slime synthesis any number of times (possibly zero) in any order.
+Slime synthesis is performed as follows.</p>
+
+  <ul>
+    <li>Choose two slimes of the same size. Let this size be X, and a new slime of size 2X appears. Then, the two original slimes disappear.</li>
+  </ul>
+
+  <p>Takahashi wants to minimize the number of slimes. What is the minimum number of slimes he can end up with by an optimal sequence of syntheses?</p>
+
+  <p><strong>Constraints</strong><br />
+$1≤N≤10^{5}$<br />
+$1≤S_{i}​≤10^9$<br />
+$1≤C_{i}​≤10^9$<br />
+$S_{1}​,S_{2}​,…,S_{N}$​ are all different.<br />
+All input values are integers.</p>
+</blockquote>
+
+<p>문제를 보고 바로 생각난 것은 2048 game이었다. 그 다음으로 생각난 건 ‘도대체 어떻게 풀지’였다. <br />
+처음에는 주어진 횟수만큼 반복을 돌아서 모든 슬라임들이 존재하는 리스트를 만들고, 이후에 차례대로 슬라임을 합쳐주는 함수를 정의해서 재귀적으로 해결하려고 하였다. 그러나 $S_{i}$와 $C_{i}$ 가 각각 $10^9$까지 가능하였기에 입력에서만 $O(n^{2})$의 복잡도를 가지는 해당 방법은 사용할 수가 없었다. 그래서 시간을 봤는데, 3초 시간 제한에 메모리는 1024 MB이길레 사실 이때 그냥 포기하고 GIST 면접 준비했다. 대회가 끝난 이후, 다시 문제를 보면서 mod(%) 연산과 Floor division(//) 연산을 사용해서 어떻게 줄일 수 있지 않을까 싶었는데, 더 생각하기 귀찮아져서 바로 Editorial을 깠다.</p>
+
+<p>그런데 Editorial 또한 내가 생각한 거랑 똑같은 방법으로 접근하고 있었다. 한 10분만 더 고민했으면 풀 수 있었을 것 같았으나 곧 점호였고 고3이 시간을 너무 쓰는 것 같아서 포기를 합리화했다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">mp</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nf">input</span><span class="p">().</span><span class="nf">split</span><span class="p">())</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">//=</span> <span class="mi">2</span>
+        <span class="n">y</span> <span class="o">*=</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mp</span><span class="p">:</span>
+        <span class="n">mp</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+=</span> <span class="n">y</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">mp</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span>
+
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">mp</span><span class="p">.</span><span class="nf">values</span><span class="p">():</span>
+    <span class="k">while</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">ans</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">value</span> <span class="o">//=</span> <span class="mi">2</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
+</code></pre></div></div>
+<p><a href="https://atcoder.jp/contests/abc323/submissions/46352884"><strong><em>풀이코드</em></strong></a><br />
+그냥 처음에 입력 받은 값에서 같은 크기의 녀석이 2개씩 짝지어질 수 있다면, 할 수 있는 한 전부 짝지어줘서 저장해준다. 이후에, 저장되어 있는 녀석들을 다시 합쳐주면 된다. 사실 내가 떠올린 방법은 입력을 받을 때에 반만 처리해서 다시 저장하는 방법이 아니라, 입력을 받을 때마다 모두 처리하는 방법이었는데 저장했다가 나중에 합쳐주는 Editorial의 방법이 구현이 더 쉬운 것 같다.</p>
 
         
       </section>
