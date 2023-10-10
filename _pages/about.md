@@ -15,7 +15,7 @@ comments: false
 
 - **HCU_Telegram_BOT**
 <span style="color:5F5F5F;font-weight:100;">청운네트워크와 텔레그램을 결합한 챗봇, 2023. 5. 19. ~ </span><br>
-<span style="color:5F5F5F;font-weight:300;">— 팀 프로젝트(총괄 기획 및 개발) / 가장 심혈을 기울인 프로젝트, API 제작에 네트워크, 서바 등 엄청 배울 것이 많았다</span>
+<span style="color:5F5F5F;font-weight:300;">— 팀 프로젝트(총괄 기획 및 개발) / 가장 심혈을 기울인 프로젝트, API 제작에 네트워크, 서버 등 엄청 배울 것이 많았다</span>
 
 - [**manim_No29**](https://github.com/tunatuna123/manim_No29) 
 <span style="color:5F5F5F;font-weight:100;">2022 수능(홀) 29번 문제 해설 영상, 2022. 3. 06. ~ 2022. 12. 20.</span><br>
