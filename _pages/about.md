@@ -31,6 +31,6 @@ comments: false
 ## PS(Problem Solving)
 Main : Python(PyPy)<br>
 
-- Solved.AC / 골드 4
-- Atcoder / gray
-- CodeForces / Unrated
+- [**Solved.AC**](https://solved.ac/profile/tuna200538)
+- [**Atcoder**](https://atcoder.jp/users/codingtuna)
+- [**CodeForces**](https://codeforces.com/profile/TUN4TUNA)
