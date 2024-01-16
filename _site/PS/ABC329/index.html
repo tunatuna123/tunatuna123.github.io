@@ -337,7 +337,7 @@
   <label for="ac-toc">Toggle menu</label>
   <ul class="nav__items">
     <!-- <li>
-      <span class="nav__total">🌴 Total Posts: 3</span>
+      <span class="nav__total">🌴 Total Posts: 4</span>
     </li> -->
     
     
@@ -550,8 +550,8 @@ S is a string of length N consisting of lowercase English letters.</p>
 <h3 id="d---election-quick-report">D - Election Quick Report</h3>
 
 <blockquote>
-  <p>Time Limit: 3 sec / Memory Limit: 1024 MB<br />
-Score :425 points</p>
+  <p>Time Limit: 2 sec / Memory Limit: 1024 MB<br />
+Score : 350 points</p>
 
   <p><strong>Problem Statement</strong><br />
 There is an election to choose one winner from N candidates with candidate numbers $1,2,…,N$, and there have been M votes cast.</p>
@@ -570,7 +570,9 @@ $1≤A_{i}​≤N$<br />
 All input values are integers.</p>
 </blockquote>
 
-<p>해당 문제를 처음 봤을 때는 dictionary를 이용해 각 후보가</p>
+<p>해당 문제를 처음 봤을 때는 dictionary에 각 후보가 받은 표를 기록하고 이후에 max를 이용해가며 최다 득표자를 찾아나가고자 하였다. 그러나 계속 TLE가 떴고, 리스트를 사용하는 방법과, 처음부터 200000개의 리스트를 생성하는 것이 아닌 입력에 따라 차례대로 확장해내가는 방법도 써보았지만 전부 소용이 없었다.</p>
+
+<p>이는 어느 부분에서 시간이 오래 걸리지는지 몰랐기 때문에 일어난 일이었다. 나의 풀이 방법은 매 순간 가장 득표 수가 많은 후보를 찾기 위해 비상수적인 시간의 탐색을 진행하였다. M회번 최대 N개의 값을 탐색해야하므로 나의 방법은 O(N*MlogM)의 시간복잡도로 바로 터져버리는 것이다. 따라서 상수적인 탐</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
 <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
@@ -635,7 +637,8 @@ All input values are integers.</p>
 ">Prev</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/Algorithm/C-EOF/" class="pagination--pager" title="C언어 입력없을 때까지 입력 받기
+">Next</a>
     
   </nav>
 
@@ -650,6 +653,42 @@ All input values are integers.</p>
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/Algorithm/C-EOF/" rel="permalink">C언어 입력없을 때까지 입력 받기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2024-01-16T00:00:00+09:00">January 16, 2024</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">10951
+</p>
+  </article>
+</div>
+
         
           
 
@@ -776,7 +815,7 @@ All input values are integers.</p>
     
   </ul>
 </div>
-<div class="page__footer-copyright">&copy; 2023 Tuna's Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2024 Tuna's Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
