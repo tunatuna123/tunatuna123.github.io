@@ -10,7 +10,7 @@ comments: false
 
 ## Education
 -  현대청운고등학교 19기 (HCU 19)
--  GIST (24학번)
+-  GIST 기초교육학부 (24학번)
 
 ## Projects
 
