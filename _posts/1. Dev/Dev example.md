@@ -20,3 +20,4 @@ last_modified_at: 2021-10-09
 ## 🦥 본문
 
 본문은 여기에 ...
+bundle exec jekyll serve                  
