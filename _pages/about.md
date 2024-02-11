@@ -9,12 +9,13 @@ comments: false
 
 
 ## Education
--  현대청운고등학교 19기(HCU 19)
+-  현대청운고등학교 19기 (HCU 19)
+-  GIST (24학번)
 
 ## Projects
 
 - **HCU_Telegram_BOT**
-<span style="color:5F5F5F;font-weight:100;">청운 네트워크와 텔레그램을 결합한 챗봇, 2023. 5. 19. ~ </span><br>
+<span style="color:5F5F5F;font-weight:100;">청운 네트워크와 텔레그램을 결합한 챗봇, 2023. 5. 19. ~ 2024. 12. 01</span><br>
 <span style="color:5F5F5F;font-weight:300;">— 팀 프로젝트(총괄 기획 및 개발) / 가장 심혈을 기울인 프로젝트, API 제작에 네트워크, 서버 등 엄청나게 배울 것이 많았다 </span>
 
 - [**manim_No29**](https://github.com/tunatuna123/manim_No29) 
