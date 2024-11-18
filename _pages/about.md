@@ -8,3 +8,14 @@ comments: false
 취미로 개발새발 코딩하는 TUNA 입니다.
 
 아직 여러 가지를 배우고 있는 05년생 학생으로 주로 인공지능과 알고리즘, PS에 큰 관심이 있어 관련된 글을 자주 포스팅 할 예정입니다. 또한, 기술 블로그만으로 운영할 계획은 아니기에 일상적인 이야기에 관한 글들 또한 간간히 포스팅 할 예정입니다.
+
+## Education
+-  현대청운고등학교 19기 (HCU 19)
+-  GIST 기초교육학부 (24학번)
+
+## PS(Problem Solving)
+Main : Python(PyPy)<br>
+
+- [**Solved.AC**](https://solved.ac/profile/tuna200538)
+- [**Atcoder**](https://atcoder.jp/users/codingtuna)
+- [**CodeForces**](https://codeforces.com/profile/TUN4TUNA)
