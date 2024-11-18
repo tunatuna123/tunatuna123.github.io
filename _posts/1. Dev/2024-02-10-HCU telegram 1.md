@@ -8,7 +8,7 @@ categories:
 tags:
   - [Python, 1인 개발]
 
-permalink: /categories1/HCU telegram/
+permalink: /categories1/HCU telegram 1/
 
 toc: true
 toc_sticky: true
