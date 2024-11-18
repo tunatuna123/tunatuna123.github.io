@@ -12,7 +12,10 @@ comments: false
 ## Education
 
 - 현대청운고등학교 19기 (HCU 19)
+<span style="color:5F5F5F;font-weight:100;">2021. 3. 2. ~ 2023. 12. 13</span><br>
+
 - GIST 기초교육학부 (24학번)
+<span style="color:5F5F5F;font-weight:100;">2024. 2. 22. ~ 2024. 4. 25</span><br>
 
 ## PS(Problem Solving)
 
